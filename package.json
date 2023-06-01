@@ -1,0 +1,20 @@
+{
+  "name": "Cynoia-technical-test",
+  "version": "1.0.0",
+  "description": "react and nestjs technical assessment",
+  "main": "index.js",
+  "repository": "https://github.com/ihebrejeb/react-nest.git",
+  "author": "Iheb Rejeb <rejebiheb0@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "concurrently \"cd ./server && yarn start:dev\" \"cd ./client && yarn start:dev\""
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": ">=16.0.0 <17.0.0",
+    "yarn": ">=1.22.0 <2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0"
+  }
+}
