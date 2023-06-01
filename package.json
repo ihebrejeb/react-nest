@@ -7,7 +7,7 @@
   "author": "Iheb Rejeb <rejebiheb0@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prestart": "concurrently \"cd ./server && yarn add -D @nestjs/cli\" \"cd ./client && yarn add -D vite\"",
+    "prestart": "cd ./server && yarn add -D @nestjs/cli && cd ../client && yarn add -D vite",
     "start": "concurrently \"cd ./server && yarn start:dev\" \"cd ./client && yarn start:dev\""
   },
   "engines": {
