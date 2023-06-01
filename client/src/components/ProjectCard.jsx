@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ProjectCard({ project }) {
   return (
     <Link to={`/project/${project.id}`}>
-      <div className=" col-span-6 lg:col-span-1 md:col-span-2 flex flex-col justify-center  bg-[#4a2d73] rounded-md shadow-sm hover:scale-105 transform transition-all cursor-pointer">
+      <div className="flex flex-col justify-center  bg-[#4a2d73] rounded-md shadow-sm hover:scale-105 transform transition-all cursor-pointer">
         <img
           src={project.image}
           alt={project.title}
