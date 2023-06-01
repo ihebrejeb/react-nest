@@ -6,5 +6,5 @@ To start this project run:
 
 ```bash
   yarn
-  yarn start:dev
+  yarn start
 ```
