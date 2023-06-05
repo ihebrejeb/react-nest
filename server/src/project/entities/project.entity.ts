@@ -1,5 +1,7 @@
 import { v4 as uuid } from 'uuid';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Task } from './task.entity';
+import { OneToMany } from 'typeorm';
 
 @Entity()
 export class Project {
@@ -14,4 +16,8 @@ export class Project {
 
   @Column({ default: () => `'https://picsum.photos/seed/${uuid()}/200/300'` })
   image: string;
+  // TODO: Add the necessary relationship methods or properties to establish the relationship between the Project and Task entities.
+
+  @OneToMany(() => Task, (task) => task.project)
+  tasks: Task[];
 }
