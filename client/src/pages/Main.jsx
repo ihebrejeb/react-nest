@@ -1,13 +1,8 @@
-import { useEffect, useState } from 'react';
-import { generateFakeProjects } from '../utils/fakeData';
 import ProjectCard from '../components/ProjectCard';
+import useProjects from '../hooks/useProjects';
 
 function Main() {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    const res = generateFakeProjects(2);
-    setProjects(res);
-  }, []);
+  const { projects } = useProjects();
 
   return (
     <>
