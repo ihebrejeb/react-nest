@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "prestart": "cd ./server && yarn add -D @nestjs/cli && cd ../client && yarn add -D vite",
-    "start": "concurrently \"cd ./server && yarn start:dev\" \"cd ./client && yarn start:dev\""
+    "start": "cd ./server && yarn start:dev & cd ./client && yarn start:dev"
   },
   "engines": {
     "npm": "please-use-yarn",
