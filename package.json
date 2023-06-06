@@ -7,8 +7,8 @@
   "author": "Iheb Rejeb <rejebiheb0@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prestart": "cd ./server && yarn add -D @nestjs/cli && cd ../client && yarn add -D vite",
-    "start": "cd ./server && yarn start:dev & cd ../client && yarn start:dev"
+    "start:server": "cd ./server && yarn add -D @nest/cli && yarn start:dev",
+    "start:client": "cd ./client && yarn add -D vite && yarn start:dev"
   },
   "engines": {
     "npm": "please-use-yarn",
